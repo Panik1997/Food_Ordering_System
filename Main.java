@@ -355,13 +355,13 @@ public class Main {
 
                     case 7:
                         try{
-                            PrintWriter pw = new PrintWriter("order.txt");
+                            PrintWriter pw = new PrintWriter("order.txt"); // Deletes previous content in file
                         } catch (FileNotFoundException e){
                             System.out.println(e);
                         }
 
                         try {
-                            for(int i = 0 ; i < j ; i++){
+                            for(int i = 0 ; i < j ; i++){               // Adds order to file
                                 addToFile(orderArray[i], k++);
                             }
                             for(int i = 0 ; i < m ; i++){
@@ -372,7 +372,7 @@ public class Main {
                         }
 
                         try{
-                            double price = 0;
+                            double price = 0;                           // Adds total price to file
                             for(int i = 0; i < j ; i++){
                                 price = price + orderArray[i].lunch_price;
                             }
@@ -385,12 +385,12 @@ public class Main {
                         }
 
                         try{
-                                addInfNote();
+                                addInfNote();       
                         } catch (InputMismatchException e){
                             System.out.println(e);
                         }
 
-                        try{
+                        try{                                            // Adds information about drinks
                             for(int i = 0; i < o; i++){
                                 addInfoToFile(info[i]);
                             }
