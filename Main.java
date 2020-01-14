@@ -102,7 +102,7 @@ public class Main {
         Scanner num = new Scanner(System.in);
         double bill1 = 0;
 
-        // If you want add new meal to menu, just create another object 
+        // If you want to add a new meal to menu, just create another object 
         // of type Lunch in array "meals" and add +1 to index.
         
         Lunch[] meals = new Lunch[9];
